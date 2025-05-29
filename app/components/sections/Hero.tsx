@@ -23,7 +23,7 @@ export function Hero() {
               className="text-4xl md:text-6xl font-bold tracking-tight"
             >
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>
             </motion.h1>
