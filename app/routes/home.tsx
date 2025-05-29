@@ -1,13 +1,18 @@
+// app/routes/home.tsx
+import { Hero } from "~/components/sections/Hero";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Portfolio - Your Name" },
+    { name: "description", content: "Welcome to my portfolio website!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="min-h-screen">
+      <Hero />
+    </div>
+  );
 }
